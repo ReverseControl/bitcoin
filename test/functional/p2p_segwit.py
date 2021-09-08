@@ -138,7 +138,7 @@ class TestP2PConn(P2PInterface):
     # Don't send getdata message replies to invs automatically.
     # We'll send the getdata messages explicitly in the test logic.
     def on_inv(self, message):
-        pass
+        raise NotImplementedError()
 
     def on_getdata(self, message):
         self.lastgetdata = message.inv

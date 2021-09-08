@@ -186,7 +186,7 @@ class WalletTaprootTest(BitcoinTestFramework):
         self.setup_nodes()
 
     def init_wallet(self, i):
-        pass
+        raise NotImplementedError()
 
     @staticmethod
     def rand_keys(n):
